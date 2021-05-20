@@ -1,18 +1,18 @@
 function solution(A) {
     const arr = A;
-    let result = 1;
+    const result = 1;
 
     const sorted = arr.sort();
-    let foundPositive = false;
+    const foundPositive = false;
 
     for (let i = 0; i < sorted.length - 1; ++i) {
-        let first = sorted[i];
+        const first = sorted[i];
 
-        if (isPositive(first))
-
+        if (isPositive(first)) {
             if (Math.abs(sorted[i] - sorted[i + 1]) > 1) {
                 return sorted[i] + 1;
             }
+        }
     }
 
     return foundPositive ? sorted[sorted.length - 1] + 1 : result;

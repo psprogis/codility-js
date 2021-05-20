@@ -6,7 +6,7 @@ function readHugeList() {
     return new Array(1000000).fill(10);
 }
 
-let list = readHugeList();
+const list = readHugeList();
 let counter = 0;
 
 function nextListItem() {

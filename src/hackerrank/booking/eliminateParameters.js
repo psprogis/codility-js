@@ -15,9 +15,9 @@ function computeParameterValue(sources) {
     const finalParameters = {};
 
     sources.flat().forEach(parameter => {
-        let [key, value] = parameter.split(':');
+        const [key, value] = parameter.split(':');
         finalParameters[key] = value;
-    })
+    });
 
     return Object.values(finalParameters);
 }

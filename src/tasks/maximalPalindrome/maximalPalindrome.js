@@ -8,8 +8,8 @@ module.exports.maximalPalindrome = maximalPalindrome;
 function maximalPalindrome(s) {
     const sortedStr = sortString(s);
 
-    let start = [];
-    let end = [];
+    const start = [];
+    const end = [];
     let joinChar = '';
 
     for (let i = 0; i < sortedStr.length; ++i) {
@@ -27,7 +27,6 @@ function maximalPalindrome(s) {
             joinChar = sortedStr[i];
         }
     }
-
 
     return `${start.join('')}${joinChar}${end.join('')}`;
 }

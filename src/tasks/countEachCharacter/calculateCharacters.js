@@ -1,6 +1,5 @@
-
 function calculateStatistics(str) {
-    let result = {};
+    const result = {};
 
     str.split('') // [...str]
         .filter(ch => ch.match(/[A-Za-z0-9]/)) // use class, \w ?
@@ -11,5 +10,6 @@ function calculateStatistics(str) {
     return result;
 }
 
+module.exports.calculateStatistics = calculateStatistics;
 // const stats = calculateStatistics("abc, sdaf!");
 // console.log(stats);

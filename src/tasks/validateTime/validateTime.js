@@ -5,7 +5,6 @@ function validTime(time) {
 }
 
 function checkTimePart(part, limit) {
-
     const intPart = Number.parseInt(part);
 
     if (Number.isNaN(intPart)) {
@@ -16,3 +15,4 @@ function checkTimePart(part, limit) {
 }
 
 // console.log(validTime("13:58"))
+module.exports.validateTime = validTime;

@@ -43,7 +43,7 @@ function isEven(number) {
 }
 
 function swap(arr, i, j) {
-    let tmp = arr[i];
+    const tmp = arr[i];
     arr[i] = arr[j];
     arr[j] = tmp;
 }

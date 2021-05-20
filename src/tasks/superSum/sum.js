@@ -1,5 +1,4 @@
 function sum(n) {
-
     let accumulatedValue = n;
 
     function f(n2 = 0) {
@@ -10,7 +9,7 @@ function sum(n) {
 
     f[Symbol.toPrimitive] = function(hint) {
         return accumulatedValue;
-    }
+    };
 
     return f;
 }
