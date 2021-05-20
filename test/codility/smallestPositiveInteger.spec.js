@@ -11,5 +11,5 @@ describe('smallest positive integer task', () => {
         it(`should find number in array: ${test.input}`, () => {
             expect(solution(test.input)).toBe(test.expected);
         });
-    })
+    });
 });
