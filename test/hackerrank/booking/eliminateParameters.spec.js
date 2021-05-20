@@ -1,4 +1,4 @@
-const { computeParameterValue } = require('../../src/hackerrank/booking/eliminateParameters');
+const { computeParameterValue } = require('../../../src/hackerrank/booking/eliminateParameters');
 
 describe('compute parameter value, "eliminate algorithm"', () => {
 
