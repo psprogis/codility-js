@@ -1,6 +1,7 @@
 // What is a potential pitfall with using typeof bar === "object" to determine
 // if bar is an object? How can this pitfall be avoided?
 
+/* eslint-disable no-console */
 // corner cases:
 console.log(typeof null);
 console.log(typeof Math.abs);

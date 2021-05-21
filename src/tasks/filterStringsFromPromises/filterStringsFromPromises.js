@@ -9,6 +9,7 @@ const promisedArrayOfPromisedStrings = Promise.resolve([
     Promise.resolve('in uppercase'),
 ]);
 
+/* eslint-disable */
 // solution:
 (async function () {
     const result = (await Promise.all(await promisedArrayOfPromisedStrings))
@@ -18,3 +19,4 @@ const promisedArrayOfPromisedStrings = Promise.resolve([
 
     console.log(result);
 })();
+/* eslint-enable */

@@ -1,6 +1,7 @@
 // Discuss possible ways to write a function isInteger(x)
 // that determines if x is an integer.
 
+/* eslint-disable no-unused-vars, no-bitwise */
 function isInteger(x) {
     return (x ^ 0) === x;
 }
@@ -12,7 +13,6 @@ function isInteger(x) {
 function isInteger2(x) {
     return (typeof x === 'number') && (x % 1 === 0);
 }
-
 
 function wrongSolution(x) { return parseInt(x, 10) === x; }
 

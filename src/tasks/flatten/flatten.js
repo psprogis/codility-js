@@ -1,3 +1,4 @@
+/* eslint-disable no-param-reassign */
 function flatten(arr) {
     while (arr.some(Array.isArray)) {
         arr = Array.prototype.concat.apply([], arr);

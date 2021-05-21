@@ -13,7 +13,7 @@ function maximalPalindrome(s) {
     let joinChar = '';
 
     for (let i = 0; i < sortedStr.length; ++i) {
-        let j = i + 1;
+        const j = i + 1;
         if (j < sortedStr.length) {
             if (sortedStr[i] === sortedStr[j]) {
                 start.push(sortedStr[i]);

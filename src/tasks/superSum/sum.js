@@ -6,8 +6,8 @@ function sum(n) {
 
         return f;
     }
-
-    f[Symbol.toPrimitive] = function(hint) {
+    /* eslint-disable-next-line func-names */
+    f[Symbol.toPrimitive] = function () {
         return accumulatedValue;
     };
 

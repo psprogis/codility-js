@@ -10,10 +10,11 @@ const list = readHugeList();
 let counter = 0;
 
 function nextListItem() {
-    let item = list.pop();
+    const item = list.pop();
     ++counter;
 
     if (item) {
+        /* eslint-disable-next-line no-console */
         console.log(`${counter}, work with ${item}`);
         // process the list item...
         // nextListItem();

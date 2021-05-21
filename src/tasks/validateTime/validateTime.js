@@ -5,7 +5,7 @@ function validTime(time) {
 }
 
 function checkTimePart(part, limit) {
-    const intPart = Number.parseInt(part);
+    const intPart = Number.parseInt(part, 10);
 
     if (Number.isNaN(intPart)) {
         return false;

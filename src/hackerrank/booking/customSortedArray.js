@@ -41,7 +41,7 @@ function moves(arr) {
 function isEven(number) {
     return number % 2 === 0;
 }
-
+/* eslint-disable no-param-reassign */
 function swap(arr, i, j) {
     const tmp = arr[i];
     arr[i] = arr[j];
