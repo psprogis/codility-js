@@ -1,4 +1,3 @@
-
 // binary search, O(log n)
 function peakIndexInMountainArray(arr) {
     let start = 0;
