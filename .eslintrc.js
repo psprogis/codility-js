@@ -19,5 +19,6 @@ module.exports = {
         'no-plusplus': 'off',
         'max-len': ['error', { code: 120 }],
         'no-continue': 'off',
+        'no-multi-spaces': ['error', { ignoreEOLComments: true }],
     },
 };
