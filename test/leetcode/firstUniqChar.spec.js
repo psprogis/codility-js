@@ -1,4 +1,4 @@
-const { firstUniqChar: firstUniqCharSpec } = require('../../src/leetcode/firstUniqChar');
+const { firstUniqChar } = require('../../src/leetcode/firstUniqChar');
 
 describe('first uniq character task', () => {
     const basicTests = [
@@ -9,7 +9,7 @@ describe('first uniq character task', () => {
 
     basicTests.forEach(test => {
         it(`should find first uniq character index: ${test.input}`, () => {
-            expect(firstUniqCharSpec(test.input)).toBe(test.expected);
+            expect(firstUniqChar(test.input)).toBe(test.expected);
         });
     });
 });
